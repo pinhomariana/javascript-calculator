@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
 </head>
 <body>
     <div class="calculator">
         <input id="display"></input>
         <div class="buttons">
-            <button class="orange-button">7</button>
-            <button class="orange-button">8</button>
-            <button class="orange-button">9</button>
-            <button class="blue-button">÷</button>
-            <button class="orange-button">4</button>
-            <button class="orange-button">5</button>
-            <button class="orange-button">6</button>
-            <button class="blue-button">x</button>
-            <button class="orange-button">1</button>
-            <button class="orange-button">2</button>
-            <button class="orange-button">3</button>
-            <button class="blue-button" >-</button>
-            <button class="orange-button">0</button>
-            <button class="orange-button">AC</button>
-            <button class="orange-button">=</button>
-            <button class="blue-button">+</button>
+            <button onclick="addToDisplay('7')" class="orange-button">7</button>
+            <button onclick="addToDisplay('8')" class="orange-button">8</button>
+            <button onclick="addToDisplay('9')" class="orange-button">9</button>
+            <button onclick="addToDisplay('/')" class="blue-button">÷</button>
+            <button onclick="addToDisplay('4')" class="orange-button">4</button>
+            <button onclick="addToDisplay('5')" class="orange-button">5</button>
+            <button onclick="addToDisplay('6')" class="orange-button">6</button>
+            <button onclick="addToDisplay('*')" class="blue-button">x</button>
+            <button onclick="addToDisplay('1')" class="orange-button">1</button>
+            <button onclick="addToDisplay('2')" class="orange-button">2</button>
+            <button onclick="addToDisplay('3')" class="orange-button">3</button>
+            <button onclick="addToDisplay('-')" class="blue-button" >-</button>
+            <button onclick="addToDisplay('0')" class="orange-button">0</button>
+            <button onclick="clearAll()" class="orange-button">AC</button>
+            <button onclick="calculate()" class="orange-button">=</button>
+            <button onclick="addToDisplay('+')" class="blue-button">+</button>
         </div>
     </div>
 </body>
